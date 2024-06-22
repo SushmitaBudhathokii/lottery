@@ -1,38 +1,88 @@
+html,body {
+    height: 100% !important;
+}
+
+
 .App {
-  text-align: center;
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(70,252,144,1) 100%);
+    height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header-class {
+    background-color: #000000;
+    color: rgb(0, 255, 72);
+    height: 200px;
+    font-size: 115px;
+    text-align: center;
+    font-family: fantasy;
+    padding-top: 16px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.score-board-outer {
+    background-color: rgb(0, 255, 72);
+    height: 74vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.img-class {
+    width: 85%;
+    height: 220px;
 }
 
-.App-link {
-  color: #61dafb;
+.score-board-inner {
+    background-color: #000000;
+    width: 96%;
+    height: 95%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.game-board {
+    /* background-color: #FFFFFF; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Adjust the gap as needed */
+}
+
+.game-number-button{
+    padding: 18px;
+    margin-bottom: 23px;
+    cursor: pointer;
+    border-radius: 21px !important;
+    color: black;
+    justify-content: center;
+    width: 12%;
+    margin: 24px;
+    height: 71px !important;
+}
+
+.cash-number-button {
+    padding: 18px;
+    margin-bottom: 23px;
+    cursor: pointer;
+    border-radius: 21px !important;
+    color: black;
+    justify-content: center;
+    width: 28%;
+    margin: 24px;
+    height: 71px !important;
+}
+
+
+.button-css{
+    border-color: #42bb4c !important;
+    background-color: white !important;
+    color: black !important;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+}
+
+.game-buttons button{
+    background-color: #FFFFFF;
+    border-color: #000000;
+    width: 80%;
+    height: 150px;
+    color: #000000;
+    font-size: 150%;
+}
+
+.game-buttons button:hover{
+    background-color: #000000;
 }
