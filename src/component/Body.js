@@ -16,7 +16,7 @@ const Body = () => {
       <GameContext.Provider value={{clickedNumbers, setClickedNumbers, clickedMoney, setClickedMoney, totalCash, setTotalCash}}>
         <div className='row'>
         <div className='col-md-2'>
-          <img src={Theme} className='img-class pl-8'/>
+          <img src={Theme} className='img-class pl-8' alt=""/>
           <MoneyBoard></MoneyBoard>
         </div>
         <div className='col-md-7'>

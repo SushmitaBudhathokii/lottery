@@ -12,11 +12,10 @@ const CashClear = () => {
     }
  
     const display = () => {
-      alert(clickedNumbers.length == 5 && totalCash ? `Ticket Number : ${clickedNumbers.join(',')} and Cash is $${totalCash}` : `Incomplete data`)
+      alert(clickedNumbers.length === 5 && totalCash ? `Ticket Number : ${clickedNumbers.join(',')} and Cash is $${totalCash}` : `Incomplete data`)
     }
 
     const generateRandomTicketNum = () => {
-      const numbers = Array(20).fill(0).map((e,i)=>i+1);
       const randomArr = [];
       do{
         const randomNum = Math.floor(Math.random() * (20)) + 1;

@@ -11,7 +11,7 @@ const GameBoard = () => {
     if (clickedNumbers.includes(number)) {
       setClickedNumbers(clickedNumbers.filter((f) => f !== number))
     } else {
-      clickedNumbers.length == 5 ? alert("Sorry! Cannot select more.") : setClickedNumbers([...clickedNumbers, number])
+      clickedNumbers.length === 5 ? alert("Sorry! Cannot select more.") : setClickedNumbers([...clickedNumbers, number])
     }
   };
 
